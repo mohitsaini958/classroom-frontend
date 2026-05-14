@@ -1,7 +1,7 @@
 export const DEPARTMENTS =[
-    'CS',
-    'Math',
-    'English',
+    "Computer Science",
+    +    "Physics",
+    +    "History",
 ];
 
 export const DEPARTMENTS_OPTIONS = DEPARTMENTS.map((item) => (
