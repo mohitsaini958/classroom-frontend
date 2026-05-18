@@ -50,8 +50,8 @@ const UploadWidget = ({value=null,onChange,disabled=false}) => {
             if(initializeWidget()){
                 window.clearInterval(interval);
             }
-            return ()=>window.clearInterval(interval);
         },500)
+        return ()=>window.clearInterval(interval);
     }, []);
 
     const openWidget = () => {
@@ -64,7 +64,7 @@ const UploadWidget = ({value=null,onChange,disabled=false}) => {
         <div className={"space-y-2"}>
             {preview?(
                 <div className={"upload-preview"}>
-                    <img src={preview.url} alt="Uploaded file"/>
+                    <img src={preview.url} alt="U"/>
                 </div>
             ):
             <div className={"upload-dropzone"} role={"button"} tabIndex={0} onClick={openWidget} onKeyDown={(event)=>{
